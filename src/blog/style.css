@@ -46,6 +46,9 @@ main {
 	height: auto;
 }
 
+.articles {
+	padding: 20px;
+}
 article {
 	color: white;
 	margin: 1% auto;
@@ -66,4 +69,13 @@ article {
 #description {
 	font-weight: lighter;
 	font-size: 1.5em;
+}
+
+footer {
+	padding: 20px;
+
+	color: white;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 1em;
 }
