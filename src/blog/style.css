@@ -16,29 +16,37 @@ header {
 }
 
 /** Horizontal Navigation Bar **/
-nav {
+.navigation {
 	/* display: flex; */
 	width: 100%;
 }
-nav ul {
+.navigation ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
 }
-nav li {
-	float: left;
+.nav-wrapper li {
+	float: left !important;
 }
-nav li a {
+.social_media-wrapper li {
+	float: right !important;
+}
+.navigation li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 1em;
 }
-nav li a:hover {
+/* .social_media-wrapper li a {
+	font-size: 1.25em !important;
+} */
+.navigation li a:hover {
 	background-color: #111;
+	transition: 0.25s;
 }
 
 main {
