@@ -50,40 +50,33 @@ header {
 }
 
 main {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
+	width: 100%;
+	height: auto;
 }
 
-#profile-pic {
-  grid-column: 2/3;
-  width: 40%;
-  margin: 10% auto;
-  border-radius: 50%;
-  
+.articles {
+	padding: 20px;
+}
+article {
+	color: white;
+	margin: 1% auto;
+	width: 60%;
 }
 
-h1 {
-  color:white;
-  grid-column: 2/3;
-  margin: 3% auto;
-  font-size: 2em;
-  /* border-bottom: 2px solid #1940A9; */
+/** Where my Name and Description are styled**/
+#intro {
+	color: white;
+	font-style: normal;
+	text-align: center;
+	margin: 200px;
 }
-
-h2 {
-  color: white;
-  grid-column: 2/3;
-  margin: 3% auto;
-  font-style: italic;
+#name {
+	font-weight: lighter;
+	font-size: 5em;
 }
-
-.small-text {
-  grid-column: 2/3;
-  color: white;
-  font-size: 10px;
-  margin: 3% auto;
+#description {
+	font-weight: lighter;
+	font-size: 1.5em;
 }
 
 footer {
@@ -92,5 +85,5 @@ footer {
 	color: white;
 	text-align: center;
 	font-weight: lighter;
-  font-size: 1em;
+	font-size: 1em;
 }
