@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <!-- Link to "fontawesome.com" v.5 script for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <title>My Portfolio</title>
   </head>
     <body>
@@ -13,23 +16,37 @@
     <!-- The rest of your code goes between here... -->
 
     <header>
-        <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
-        <nav>
-            <a class="has-border">Resume</a>
-            <a class="has-border">About Me</a>
-            <a href="./src/blog/blog.html" class="has-border">My Blog</a>
-            <a class="has-border">Contact Me</a>
-        </nav>
+        <!-- <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo"> -->
+        <!-- Top Navigation Bar -->
+				<nav class="navigation">
+					<ul>
+						<!-- Navigation Icons -->
+						<div class="nav-wrapper">
+							<li><a href="">Resume</a></li>
+							<li><a href="">About Me</a></li>
+							<li><a href="./src/blog/blog.html">My Blog</a></li>
+              <li><a href="">Contact Me</a></li>
+              <li><a href="">Portfolio</a></li>
+						</div>
+						<!-- Social Media Icons -->
+						<div class="social_media-wrapper">
+							<!-- Open New Tab -->
+							<li><a href="https://codepen.io/diegoperez14/" target="_blank"><i class="fab fa-codepen fa-lg"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UC63wmNyIqyJNCPfSmLUUZFg" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></li>
+							<li><a href="https://github.com/DiegoPerez1441" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/diegoperez14/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+						</div>
+					</ul>
+				</nav>
         </header>
         <main>
             <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
             <h1>Diego Perez</h1>
             <h2>Student of Web Development</h2>
-            <button id="portfolio">Portfolio</button>
-            
-        <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+            <!-- <button id="portfolio">Portfolio</button> -->
         </main>
 
     <!-- ...and here. -->
     </body>
+    <footer><a class="small-text" href="https://austincodingacademy.com/" target="_blank">© Austin Coding Academy</a></footer>
   </html>
