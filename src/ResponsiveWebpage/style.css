@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  margin: 2em 0 1em 0;
+  white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.article {
+  height: 100%;
+  width: 70%;
+  display: inline-block;
+  padding: 0 1em 0 3em;
+  vertical-align: top;
+}
+
+.image {
+  width: 100%;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+}
+.story {
+  font-size: 1.3em;
+  white-space: normal;
+}
+.story p {
+  font-size: 1.3em;
+  white-space: normal;
+}
+
+h4 {
+  font-size: 2.4em;
+  padding: .5em 0 .5em 0;
+  white-space: normal;
+}
+
+.top-stories {
+  height: 100%;
+  width: 22%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 2em 0 0;
+  white-space: normal;
+  margin-left: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+.top-stories h3 {
+  font-weight: bold;
+  font-size: 1.7em;
+  padding-bottom: 0.5em;
+}
+.top-stories p {
+  font-weight: bold;
+  margin: 1.5em 0 1.5em 0;
+}
+
+hr {
+  height: 1px;
+  width: 96%;
+  border: 0;
+  clear: both;
+  display: block;
+  margin-bottom: 2em;
+  background-color: black;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+
+}
+
+/* Phone */
+@media (max-width: 500px) {
+
+}
