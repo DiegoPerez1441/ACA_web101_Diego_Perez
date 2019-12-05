@@ -26,7 +26,11 @@ body {
   margin: 2em 0 1em 0;
   white-space: nowrap;
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+
+main {
+  width: 100%;
 }
 
 .article {
@@ -89,12 +93,56 @@ hr {
   background-color: black;
 }
 
-/* Tablet */
-@media (max-width: 800px) {
+footer {
+  max-width: 100%;
+  display: block;
+  background-color: #333;
+  padding: 1em 1em 1em 1em;
+  
+}
+footer .useful-links, .social-media {
+  display: inline-block;
+  width: 50%;
+}
+footer h5 {
+  color: white;
+  font-size: 1.4em;
+}
+footer p {
+  color: white;
+}
 
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+  body {
+    max-width: 100%;
+  }
+  
+  .top-stories {
+    display: none;
+  }
+  .article {
+    width: auto;
+    padding: 0 1em 0 1em;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Phone */
-@media (max-width: 500px) {
-
+@media screen and (max-width: 500px) {
+  .story p {
+    font-size: 1em;
+    white-space: normal;
+  }
+  
+  h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: .5em 0 .5em 0;
+    white-space: normal;
+  }
 }
