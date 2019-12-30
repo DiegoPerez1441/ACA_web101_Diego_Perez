@@ -1,0 +1,116 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.calculator {
+  /* width: 30%;
+  height: 100%; */
+
+  /* maintains aspect ratio */
+  width: 56vh;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+.inner-ele {
+  width: 100%;
+  height: 100%;
+  /* Padding and borders will be included in the width calculation */
+  box-sizing: border-box;
+  padding: 10px;
+}
+.display {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* background-color: rgb(120, 120, 120, 0.5); */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 8em;
+  color: white;
+}
+.keyboard {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  /* background-color: rgb(220, 220, 220, 0.5); */
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.button {
+  /* width: 100%;
+  height: 0;
+  padding: 50% 0 50% 0; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  border-radius: 50%;
+}
+.button_0 {
+  /* width: 100%;
+  height: 100%;
+  padding: 0; */
+  border-radius: 50px;
+}
+.light {
+  background-color: rgb(170, 170, 170);
+  color: black;
+}
+.light:hover {background-color: rgb(190, 190, 190);}
+.orange {
+  background-color: rgb(255, 178, 34);
+  color: white;
+}
+.orange:hover {background-color: rgb(275, 198, 54);}
+.dark {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+.dark:hover {background-color: rgb(100, 100, 100);}
+.button_0 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+/* Chrome will also apply highlighting to other elements such as DIV's used as models. To prevent the highlight on those and all other elements as well */
+*:focus {
+  outline: 0;
+}
+
+#debug {
+  /* display: none; */
+  color: brown;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+}
