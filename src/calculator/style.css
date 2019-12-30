@@ -109,7 +109,7 @@ body {
 }
 
 #debug {
-  /* display: none; */
+  display: none;
   color: brown;
   font-family: 'Open Sans', sans-serif;
   font-size: 4em;
