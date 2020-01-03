@@ -45,12 +45,15 @@ body {
   font-size: 1.5em;
   padding: 20px 20px 20px 10px;
 }
-#projects a, #misc a {
+.projects, .misc {
   text-decoration: none;
   display: block;
-  color: white;
+  color: rgba(185, 185, 185, 0.9);
   font-size: 1.2em;
   padding: 0px 0px 0px 10px;
+}
+.active {
+  color: white !important;
 }
 #projects a:hover, #misc a:hover {
   background-color: rgb(62, 65, 73, 0.75);
@@ -80,7 +83,7 @@ body {
   margin-left: 250px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr;
   grid-template-areas:
     "header"
     "main";
@@ -120,15 +123,13 @@ body {
 
 .main {
   grid-area: main;
-  /* background-color: rgb(42, 45, 53); */
-  /* background-image: linear-gradient(to bottom right, rgb(72, 75, 83), rgb(0, 0, 0)); */
+  background-image: linear-gradient(to bottom right, rgb(72, 75, 83), rgb(0, 0, 0));
 }
 .overview {
   width: 100%;
   /* height: 100vh; */
   display: grid;
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom right, rgb(72, 75, 83), rgb(0, 0, 0));
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr)); /* Where the magic happens */
   /* grid-auto-rows: 94px; */
   grid-gap: 15px;
@@ -140,7 +141,7 @@ body {
   background-color: rgba(34, 31, 31, 0.75);
 
   height: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding-top: 50%;
   position: relative;
 }
