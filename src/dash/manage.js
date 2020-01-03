@@ -1,8 +1,6 @@
 // Wait for the document to load before jQuery starts
 $(document).ready(function() {
 
-  
-
   // Active Class Handler
   function handleActiveClass(event) {
     $(".misc").click(function(event) {
@@ -15,7 +13,8 @@ $(document).ready(function() {
         $(".projects").addClass("not-active");
         console.log("Misc Toggled");
 
-        // $(".overview_card-projects").css("display", "none");
+        $(".overview_card_projects").css("display", "none");
+        $(".overview_card_misc").css("display", "flex");
       }
     })
     $(".projects").click(function(event) {
@@ -28,7 +27,8 @@ $(document).ready(function() {
         $(".misc").addClass("not-active");
         console.log("Projects Toggled");
 
-        // $(".overview_card-projects").css("display", "flex");
+        $(".overview_card_misc").css("display", "none");
+        $(".overview_card_projects").css("display", "flex");
       }
     })
 
