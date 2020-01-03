@@ -55,7 +55,7 @@ body {
 .active {
   color: white !important;
 }
-#projects a:hover, #misc a:hover {
+.projects:hover, .misc:hover {
   background-color: rgb(62, 65, 73, 0.75);
 }
 .sidenav_list {
@@ -135,7 +135,7 @@ body {
   grid-gap: 15px;
   padding: 0 20px 20px 20px;
 }
-.overview_card {
+.overview_card_projects {
   display: flex;
   border-radius: 15px;
   background-color: rgba(34, 31, 31, 0.75);
@@ -145,7 +145,7 @@ body {
   padding-top: 50%;
   position: relative;
 }
-.overview_card div {
+.overview_card_projects div {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -158,9 +158,38 @@ body {
   background-size: contain;
   background-position: center center;
 }
-.overview_card-inner-1 {background-image: url("./img/Portfolio.jpg");}
-.overview_card-inner-2 {background-image: url("./img/blog.jpg");}
-.overview_card-inner-3 {background-image: url("./img/NASA-LandingPage.jpg");}
-.overview_card-inner-4 {background-image: url("./img/ResponsiveWebpage.jpg");}
-.overview_card-inner-5 {background-image: url("./img/calculator.jpg");}
+.overview_card_projects-inner-1 {background-image: url("./img/Portfolio.jpg");}
+.overview_card_projects-inner-2 {background-image: url("./img/blog.jpg");}
+.overview_card_projects-inner-3 {background-image: url("./img/NASA-LandingPage.jpg");}
+.overview_card_projects-inner-4 {background-image: url("./img/ResponsiveWebpage.jpg");}
+.overview_card_projects-inner-5 {background-image: url("./img/calculator.jpg");}
 
+.overview_card_misc {
+  /* display: flex; */
+  display: none;
+  border-radius: 15px;
+  background-color: rgba(34, 31, 31, 0.75);
+
+  height: 0;
+  overflow: hidden;
+  padding-top: 50%;
+  position: relative;
+}
+.overview_card_misc div {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.overview_card_misc-inner-1 {background-image: url("./img/github.jpg");}
+.overview_card_misc-inner-2 {background-image: url("./img/youtube.jpg");}
+.overview_card_misc-inner-3 {background-image: url("./img/linkedin.jpg");}
+.overview_card_misc-inner-4 {background-image: url("./img/codepen.jpg");}
+.overview_card_misc-inner-5 {background-image: url("./img/khanacademy.jpg");}
