@@ -32,6 +32,24 @@ $(document).ready(function() {
       }
     })
 
+    // Handle Mobile Menu Bar
+    $(".menu-icon").click(function(event) {
+
+      if ($(this).hasClass("not-active")) {
+        $(this).removeClass("not-active");
+        $(this).addClass("active");
+
+        $(".grid-container").css("margin-left", "250px");
+        $(".sidenav").css("width", "250px");
+      } else if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).addClass("not-active");
+
+        $(".grid-container").css("margin-left", "0px");
+        $(".sidenav").css("width", "0px");
+      }
+    })
+
   }
   handleActiveClass(event);
 

@@ -39,6 +39,8 @@ body {
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(30, 32, 37);
+
+  transition: width 0.5s;
 }
 .profile h2 {
   color: white;
@@ -88,19 +90,32 @@ body {
     "header"
     "main";
   font-family: 'Open Sans', sans-serif;
+
+  transition: margin-left 0.5s;
 }
 
 .header {
   grid-area: header;
   background-color: rgb(72, 75, 83);
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+  /* Y-axis */
+  align-items: center;
+  /* X-axis */
+  justify-content: flex-start;
+  flex-direction: row;
   font-family: 'Open Sans', sans-serif;
 
   box-sizing: border-box;
   padding: 5px 20px;
+}
+.menu-icon i {
+  height: 100%;
+  display: none;
+  color: white;
+  font-size: 1.2em;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 10px;
 }
 .searchbar {
   display: flex;
@@ -193,3 +208,23 @@ body {
 .overview_card_misc-inner-3 {background-image: url("./img/linkedin.jpg");}
 .overview_card_misc-inner-4 {background-image: url("./img/codepen.jpg");}
 .overview_card_misc-inner-5 {background-image: url("./img/khanacademy.jpg");}
+
+
+
+/* CSS Media Queries */
+/* Mobile Devices */
+@media (max-width: 700px) {
+  .sidenav {
+    /* display: none; */
+    width: 0;
+  }
+
+  .menu-icon i {
+    display: block;
+  }
+
+  .grid-container {
+    margin-left: 0;
+  }
+
+}
