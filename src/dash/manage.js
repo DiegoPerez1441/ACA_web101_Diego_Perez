@@ -45,12 +45,30 @@ $(document).ready(function() {
         $(this).removeClass("active");
         $(this).addClass("not-active");
 
-        $(".grid-container").css("margin-left", "0px");
+        $(".grid-container").css("margin-left", "0");
         $(".sidenav").css("width", "0px");
       }
     })
 
   }
   handleActiveClass(event);
+
+
+  // Fix sidenav bug where it doesn't reopen after resizing up
+  $(window).on('resize', function() {
+
+    if($("body").width() < 700) {
+      $(".grid-container").css("margin-left", "0");
+      $(".sidenav").css("width", "0");
+    }
+
+    if(($("body").width() > 700)) {
+      $(".grid-container").css("margin-left", "250px");
+      $(".sidenav").css("width", "250px");
+
+      $(".menu-icon").removeClass("active");
+      $(".menu-icon").addClass("not-active");
+    }
+  })
 
 });
