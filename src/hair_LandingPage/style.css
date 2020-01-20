@@ -94,6 +94,7 @@ body {
 	width: 100%;
 }
 .the-beacon_text {
+  max-width: 25%;
   /* Position the text in the top right of the featured div */
   position: absolute;
   left: 50%;
