@@ -1,0 +1,177 @@
+/* 
+Used Inspect Element to get the exact measurments for text styling and positioning 
+Website: https://freewebsitetemplates.com/preview/mustacheenthusiast/index.html
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  display: block;
+  width: 100%;
+  height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+
+  display: flex;
+  /* Y-axis */
+  align-items: center;
+  /* X-axis */
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+
+}
+.mustacchio {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  margin: 40px 20px;
+  
+  background-image: url("./img/mustacchio.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navigation {
+  display: inline;
+  margin: auto;
+}
+.navigation ul {
+  display: flex;
+  /* background-color: rgba(154, 156, 156, 0.548); */
+}
+.navigation_button {
+  list-style-type: none;
+}
+.navigation_button a {
+  /* display: block; */
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-decoration: none;
+  /* font-weight: 800; */
+  color: black;
+  padding: 20px;
+}
+.navigation_button a:hover {
+  color: rgb(11, 163, 156);
+}
+
+.featured {
+  width: 100%;
+  overflow: hidden;
+  /* height: 100%; */
+}
+.featured img {
+  border: 0;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.the-beacon_text {
+  /* Position the text in the top right of the featured div */
+  position: absolute;
+  left: 50%;
+	top: 40%;
+  text-align: left;
+  
+  padding-right: 20%;
+}
+.the-beacon_text h2 {
+  display: inline-block;
+  font-family: 'Poller One', cursive;
+  background-color: white;
+  color: black;
+  font-size: 1.3em;
+
+  margin: 0 0 18px;
+  padding: 23px 27px 20px;
+}
+.the-beacon_text span {
+  display: inline-block;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  font-size: 1.2em;
+
+  margin: 7px 0px;
+  padding: 12px 27px;
+}
+.the-beacon_text a {
+  display: inline-block;
+  background: rgb(11, 163, 156);
+	color: rgb(255, 255, 255);
+  font-size: 1em;
+  text-decoration: none;
+  
+  margin: 15px 0 0;
+	padding: 26px 27px 22px;
+}
+.the-beacon_text a:hover {
+  background: rgb(31, 195, 188);
+}
+
+.characters ul {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poller One', cursive;
+  justify-content: center;
+
+  padding: 24px 0 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.characters ul li {
+  display: block;
+  width: 25%;
+  margin: 0 10px 20px;
+  color: black;
+}
+.characters img {
+  display: block;
+  border: 2px solid rgb(26, 26, 26);
+
+}
+.characters ul li span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  color: black;
+  font-size: 1.4em;
+  padding: 33px 0 0;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+.footer p {
+  font-size: 1em;
+  color: white;
+}
