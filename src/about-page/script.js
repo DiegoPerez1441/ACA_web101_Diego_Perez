@@ -12,13 +12,14 @@ $(document).ready(function() {
     function parallax($element) {
       // Difference
       var diff = $(window).scrollTop() - $element.offset().top;
+
       // New y position
       var yPos = -(diff * speed);
       // Calculate new y coordinates
       var coords = '50% ' + yPos + 'px';
       // Update coordinates in the CSS
       $element.css({
-        // backgroundPosition: coords
+        backgroundPosition: coords
       });
     }
 
