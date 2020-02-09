@@ -24,3 +24,15 @@ body, html {
   height: 100vh;
 }
 
+.parallax {
+  display: block;
+  min-height: 50%;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#LightMode {background-image: url('./img/macOS-Catalina-Light-mode_compressed.jpg');}
+#DarkMode {background-image: url('./img/CATALINA-04.jpeg');}

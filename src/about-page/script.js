@@ -1,18 +1,25 @@
-$(function(){
-  var $el = $('#wrapper3'); 
-  // Run when window gets scrolled 
-  $(window).scroll(function () {
-      parallax($el);
-  });
-  parallax($el);
-});
+// Wait for the document to load before jQuery starts
+$(document).ready(function() {
 
-var speed = 1;
-function paralax($el) {
-  var diff = $(window).scrollTop() - $el.offset().top;
-  var yPos = -(diff * speed);
-  var coords = '50% ' + yPos + 'px';
-  $el.css({
-      backgroundPosition: coords
-  });
-}
+  var $element = $('.parallax');
+    // Call Function on scroll  
+    $(window).scroll(function () {
+        parallax($element);
+    });
+    parallax($element);
+
+    var speed = 0.2;
+    function parallax($element) {
+      // Difference
+      var diff = $(window).scrollTop() - $element.offset().top;
+      // New y position
+      var yPos = -(diff * speed);
+      // Calculate new y coordinates
+      var coords = '50% ' + yPos + 'px';
+      // Update coordinates in the CSS
+      $element.css({
+        // backgroundPosition: coords
+      });
+    }
+
+});
