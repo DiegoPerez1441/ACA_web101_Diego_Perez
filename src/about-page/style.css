@@ -26,11 +26,12 @@ body, html {
 
 .parallax {
   display: block;
-  min-height: 100%;
+  min-height: 75%;
 
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  /* Parallax Effect Modifies The Background Position Coordinates (y portion)*/
+  background-position: 50% 0%;
   background-size: cover;
 }
 
