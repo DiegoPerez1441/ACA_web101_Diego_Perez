@@ -18,29 +18,3 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-
-body {
-	width: 100%;
-	height: 100vh;
-}
-
-.parallax {
-  display: block;
-  min-height: 75%;
-
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  /* Parallax Effect Modifies The Background Position Coordinates (y portion)*/
-  background-position: 50% 0%;
-  background-size: cover;
-}
-
-#intro {
-	background-image: url('./img/AdobeStock_207701510-austinC_0.jpg');
-}
-#affiliations {
-	background-image: url('./img/austin-skyline.jpg');
-}
-#macOS {
-	background-image: url('./img/macOS-Catalina-Light-mode_compressed.jpg');
-}
