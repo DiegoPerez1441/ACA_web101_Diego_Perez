@@ -1,9 +1,3 @@
-/** Changes To-Do 
- * Fix Parallax Bug by setting background relative and fixed to parent element
-**/
-
-
-
 // Wait for the document to load before jQuery starts
 $(document).ready(function() {
 
