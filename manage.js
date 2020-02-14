@@ -15,16 +15,16 @@ $(document).ready(function() {
   parallax($element);
 
   var speed = 0.2;
-  function parallax($element) {
+  function parallax($ele) {
     // Difference
-    var diff = $(window).scrollTop() - $element.offset().top;
+    var diff = $(window).scrollTop() - $ele.offset().top;
 
     // New y position
     var yPos = -(diff * speed);
     // Calculate new y coordinates
     var coords = '50% ' + yPos + 'px';
     // Update coordinates in the CSS
-    $element.css({
+    $ele.css({
       backgroundPosition: coords
     });
   }
