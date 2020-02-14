@@ -25,7 +25,12 @@ body {
   
   /* Default Font */
   font-family: Arial, Helvetica, sans-serif;
+
+  box-sizing: border-box;
 }
+
+/* Navigation
+==================== */
 
 button {
   outline: none !important;
@@ -41,43 +46,50 @@ button {
 .nav-link {
   font-size: 1.2em;
 }
-#intro .parallax {background-image: url('./img/117-1177661_austin-texas-skyline.jpg');}
 
-#description {
-  width: 100%;
-  height: 75%;
-  background-color: rgb(25, 25, 25);
-}
+/* Containers
+==================== */
 
-#affiliations .parallax {background-image: url('./img/apple-macbook-pro-touch-bar-15-inch-2017.jpg');}
-
-.parallax {
-  display: block;
-  min-height: 100%;
-  
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  /* Parallax Effect Modifies The Background Position Coordinates (y portion)*/
-  background-position: 50% 0%;
-  background-size: cover;
-}
-
-.section {
-  width: 100%;
-  height: 100%;
-}
 .section-container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
-.section-container h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
+
+/* intro
+==================== */
+
+#intro {
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/117-1177661_austin-texas-skyline.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#intro-name h1 {
   color: white;
   font-size: 4em;
 }
 
-#macOS .parallax {background-image: url('./img/macOS-Catalina-Light-mode_compressed.jpg');}
+/* description
+==================== */
+
+#description {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+/* affiliations
+==================== */
+
+#affiliations {
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/apple-macbook-pro-touch-bar-15-inch-2017.jpg');
+  background-size: cover;
+  background-position: center;
+}
