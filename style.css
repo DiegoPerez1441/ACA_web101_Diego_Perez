@@ -79,7 +79,7 @@ button {
 
 #description {
   width: 100%;
-  height: 100%;
+  height: 50%;
   background-color: gray;
 }
 
@@ -88,7 +88,7 @@ button {
 
 #affiliations {
   width: 100%;
-  height: 100%;
+  height: 50%;
   background-image: url('./img/apple-macbook-pro-touch-bar-15-inch-2017.jpg');
   background-size: cover;
   background-position: center;
