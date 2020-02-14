@@ -41,7 +41,7 @@ button {
 .nav-link {
   font-size: 1.2em;
 }
-#intro {background-image: url('./img/117-1177661_austin-texas-skyline.jpg');}
+#intro .parallax {background-image: url('./img/117-1177661_austin-texas-skyline.jpg');}
 
 #description {
   width: 100%;
@@ -49,11 +49,11 @@ button {
   background-color: rgb(25, 25, 25);
 }
 
-#affiliations {background-image: url('./img/apple-macbook-pro-touch-bar-15-inch-2017.jpg');}
+#affiliations .parallax {background-image: url('./img/apple-macbook-pro-touch-bar-15-inch-2017.jpg');}
 
 .parallax {
   display: block;
-  min-height: 75%;
+  min-height: 100%;
   
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -80,4 +80,4 @@ button {
   font-size: 4em;
 }
 
-#macOS {background-image: url('./img/macOS-Catalina-Light-mode_compressed.jpg');}
+#macOS .parallax {background-image: url('./img/macOS-Catalina-Light-mode_compressed.jpg');}
