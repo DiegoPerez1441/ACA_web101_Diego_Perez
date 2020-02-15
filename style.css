@@ -113,7 +113,18 @@ button {
 #description {
   width: 100%;
   height: 50%;
-  background-color: gray;
+  background-color: rgb(80, 80, 80);
+}
+#description #portrait {
+  width: 100%;
+  height: 20%;
+  display: block;
+}
+#description #portrait img {
+  width: 14em !important;
+  height: auto;
+  
+  border-radius: 50%;
 }
 
 /* affiliations
