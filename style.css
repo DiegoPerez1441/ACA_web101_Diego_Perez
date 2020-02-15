@@ -42,17 +42,21 @@ body {
                 Utilities
 ****************************************/
 
-/* Navigation
+/* Buttons
 ==================== */
 button {
   outline: none !important;
 }
 
-.resize{
+/* Images
+==================== */
+.resize {
   width: 9em;
   height: auto;
 }
 
+/* Navigation
+==================== */
 .navbar-toggler {
   padding: .25rem .75rem;
   font-size: 1.25rem;
@@ -111,20 +115,33 @@ button {
 ==================== */
 
 #description {
+  display: flex;
+  flex-flow: column;
   width: 100%;
   height: 50%;
   background-color: rgb(80, 80, 80);
 }
 #description #portrait {
+  display: flex;
   width: 100%;
-  height: 20%;
-  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 #description #portrait img {
-  width: 14em !important;
-  height: auto;
-  
   border-radius: 50%;
+}
+#description-text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+#description-text p {
+  color: white;
+  font-size: 1.2em;
 }
 
 /* affiliations
