@@ -162,6 +162,10 @@ button {
 .gallery a {
   display: block;
 }
+.gallery span {
+  color: white;
+  font-size: 1.2em;
+}
 .gallery a img:not(#KAC):not(#ScienceNHS):not(#guitar) {
   border-radius: 50%;
 }
