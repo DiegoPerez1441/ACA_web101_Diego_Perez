@@ -1,3 +1,11 @@
+/**         Info and Notes
+========================================
+**TO-DO**
+*Fix bug for the affiliation icons where the click zone is too big
+
+========================================
+**/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -119,25 +127,32 @@ button {
   text-align: center;
 }
 #affiliations h2 {
+  display: flex;
   width: 100%;
   height: 20%;
 
+  align-items: center;
+  justify-content: center;
+
   color: white;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .gallery {
   width: 100%;
   height: 80%;
-  display: block;
+  display: flex;
+
+  /* Evenly Distribute and Align items */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px;
 }
 .gallery li {
-  float: left;
-	list-style: none;
-	width: 25%;
-  /* margin: 0 5.3333% 20px 0; */
-  /* margin: 0.2%; */
+  width: 25%;
+  display: block;
+  flex: 0 1 auto;
 
   text-align: center;
   list-style: none;
