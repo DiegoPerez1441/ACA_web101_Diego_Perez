@@ -2,6 +2,7 @@
 ========================================
 **TO-DO**
 *Fix bug for the affiliation icons where the click zone is too big
+  and add a zoom transition when hovered
 
 ========================================
 **/
@@ -161,9 +162,11 @@ button {
 .gallery a {
   display: block;
 }
-.gallery a img {
+.gallery a img:not(#KAC):not(#ScienceNHS):not(#guitar) {
   border-radius: 50%;
 }
+.gallery a #guitar {width: 5em !important;}
+.gallery a #KAC {width: 18em !important;}
 
 /* footer
 ==================== */
