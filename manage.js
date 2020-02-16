@@ -26,6 +26,7 @@ $(document).ready(function() {
 
     // Prevent the parallax effect from running on a mobile device
     if (screen.width >= 500) {
+      console.log("Parallax Enabled!");
       var scrolled = $(window).scrollTop();
       // Loop through every element that contains the class 'parallax'
       // so that every element has its own info/properties
