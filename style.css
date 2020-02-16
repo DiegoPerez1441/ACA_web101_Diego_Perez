@@ -1,8 +1,9 @@
 /**         Info and Notes
 ========================================
 **TO-DO**
-*Fix bug for the affiliation icons where the click zone is too big
+* Fix bug for the affiliation icons where the click zone is too big
   and add a zoom transition when hovered
+* Make the Affiliations gallery with a grid
 
 ========================================
 **/
@@ -26,6 +27,10 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -212,9 +217,11 @@ button {
   padding: 20px;
 }
 .gallery li {
-  width: 25%;
+  /* width: 25%; */
   display: block;
-  flex: 0 1 auto;
+  /* flex: 0 1 auto; */
+
+  margin: 0 5%;
 
   text-align: center;
   list-style: none;
@@ -223,9 +230,23 @@ button {
 .gallery a {
   display: block;
 }
+.gallery a:hover img {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .gallery span {
   color: white;
   font-size: 1.2em;
+}
+.gallery a img {
+  -webkit-transition: all 0.4s ease-in-out;    
+     -moz-transition: all 0.4s ease-in-out; 
+      -ms-transition: all 0.4s ease-in-out; 
+       -o-transition: all 0.4s ease-in-out; 
+          transition: all 0.4s ease-in-out;
 }
 .gallery a img:not(#KAC):not(#ScienceNHS):not(#guitar) {
   border-radius: 50%;
